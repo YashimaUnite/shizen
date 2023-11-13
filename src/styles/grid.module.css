@@ -1,0 +1,25 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* 各列のサイズを均等に設定 */
+    grid-gap: 10px; /* グリッドアイテム間のギャップ */
+    padding: 16px; /* コンテナの内側の余白 */
+    border: 1px solid #ddd; /* コンテナの枠線 */
+    max-width: 100%; /* 必要に応じて最大幅を設定 */
+}
+
+/* グリッドアイテムのスタイル */
+.gridItem {
+    background-color: #f0f0f0; /* アイテムの背景色 */
+    border: 1px solid #ccc; /* アイテムの枠線 */
+    padding: 8px; /* アイテムの内側の余白 */
+    display: flex; /* フレックスボックスモデルを使用 */
+    justify-content: center; /* 中央揃え（水平方向） */
+    align-items: center; /* 中央揃え（垂直方向） */
+    text-align: center; /* テキストを中央に揃える */
+    cursor: pointer; /* ホバー時にカーソル形状を変更 */
+}
+
+/* ホバー時のグリッドアイテムのスタイル */
+.gridItem:hover {
+    background-color: #e0e0e0; /* ホバー時の背景色 */
+}
