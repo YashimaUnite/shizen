@@ -27,7 +27,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: gray;
     font-family: 'Fira Code', monospace;
     font-size: 15px;
+}
+
+.cursor {
+    background-color: #444; /* カーソル位置の背景色 */
+    color: powderblue; /* カーソル位置の文字色 */
+    border: 1px solid whitesmoke; /* カーソル位置のボーダースタイル */
+    font-size: 15px; /* カーソル位置のフォントサイズ */
 }

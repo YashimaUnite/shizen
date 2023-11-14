@@ -3,6 +3,7 @@
 export type GridItemProps = {
     x: number;
     y: number;
+    isCursor: boolean;
 };
 
 export type GridProps = {
