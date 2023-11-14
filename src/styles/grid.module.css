@@ -1,29 +1,33 @@
-.gridWrapper {
+.containerWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: black;
+    overflow: hidden;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(15px, 1fr));
-    gap: 2px;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    width: 80vw;
-    max-width: none;
-    height: 80vh;
+    grid-template-columns: repeat(80, 15px); /* 80列 */
+    grid-template-rows: repeat(50, 15px); /* 50行 */
+    gap: 5px;
+    padding: 20px; /* 上下左右のパディング */
+    /* 幅と高さの計算式を修正 */
+    width: calc(80 * 15px + 79 * 5px + 40px); /* 列数 * アイテムの幅 + (列数 - 1) * ギャップ + 左右のパディング */
+    height: calc(50 * 15px + 49 * 5px + 40px); /* 行数 * アイテムの高さ + (行数 - 1) * ギャップ + 上下のパディング */
+    max-width: 95vw; /* ビューポートの幅の最大95% */
+    max-height: 95vh; /* ビューポートの高さの最大95% */
+    margin: auto; /* 中央揃え */
     border: 1px solid #333;
-    overflow: auto;
+    box-sizing: border-box; /* ボーダーとパディングを含めたボックスサイズ */
 }
 
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     font-family: 'Fira Code', monospace;
-    font-size: 10px;
+    font-size: 15px;
 }

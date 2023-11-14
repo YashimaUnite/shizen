@@ -1,15 +1,10 @@
-import Grid from './Components/Grid';
+import Grid from '@/components/Grid';
 import styles from '@/styles/page.module.css';
-
-// Define Grid size.
-const gridSize = 130;
 
 // Main Page Component.
 const Page = () => {
   return (
-      <div className={styles.page}>
-        <Grid gridSize={gridSize} />
-      </div>
+      <div className={styles.page}><Grid/></div>
   );
 };
 
