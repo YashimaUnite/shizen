@@ -2,7 +2,7 @@ import Grid from './Components/Grid';
 import styles from '@/styles/page.module.css';
 
 // Define Grid size.
-const gridSize = 100;
+const gridSize = 130;
 
 // Main Page Component.
 const Page = () => {

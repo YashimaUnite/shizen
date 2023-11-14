@@ -1,10 +1,10 @@
 import { GridProps, GridItemProps } from '@/models/hanabiTypes';
-import styles from '@/styles/page.module.css';
+import styles from '@/styles/grid.module.css';
 
 // Grid Item Component.
 const GridItem: React.FC<GridItemProps> = ({ x, y }) => (
     <div className={styles.item} data-x={x} data-y={y}>
-        {`＊`}
+        {`・`}
     </div>
 );
 
@@ -24,10 +24,12 @@ const Grid: React.FC<GridProps> = ({ gridSize }) => {
     const gridItems: GridItemProps[] = createGridItems(gridSize);
 
     return (
-        <div className={styles.container}>
-            {gridItems.map((item) => (
-                <GridItem key={`item-${item.x}-${item.y}`} {...item} />
-            ))}
+        <div className={styles.gridWrapper}>
+            <div className={styles.container}>
+                {gridItems.map((item) => (
+                    <GridItem key={`item-${item.x}-${item.y}`} {...item} />
+                ))}
+            </div>
         </div>
     );
 };

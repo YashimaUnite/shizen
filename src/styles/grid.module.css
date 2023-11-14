@@ -1,25 +1,29 @@
-.gridContainer {
+.gridWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* 各列のサイズを均等に設定 */
-    grid-gap: 10px; /* グリッドアイテム間のギャップ */
-    padding: 16px; /* コンテナの内側の余白 */
-    border: 1px solid #ddd; /* コンテナの枠線 */
-    max-width: 100%; /* 必要に応じて最大幅を設定 */
+    grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(15px, 1fr));
+    gap: 2px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 80vw;
+    max-width: none;
+    height: 80vh;
+    border: 1px solid #333;
+    overflow: auto;
 }
 
-/* グリッドアイテムのスタイル */
-.gridItem {
-    background-color: #f0f0f0; /* アイテムの背景色 */
-    border: 1px solid #ccc; /* アイテムの枠線 */
-    padding: 8px; /* アイテムの内側の余白 */
-    display: flex; /* フレックスボックスモデルを使用 */
-    justify-content: center; /* 中央揃え（水平方向） */
-    align-items: center; /* 中央揃え（垂直方向） */
-    text-align: center; /* テキストを中央に揃える */
-    cursor: pointer; /* ホバー時にカーソル形状を変更 */
-}
-
-/* ホバー時のグリッドアイテムのスタイル */
-.gridItem:hover {
-    background-color: #e0e0e0; /* ホバー時の背景色 */
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 10px;
 }
