@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'dotTerm',
-  description: 'You can drew the hanabi. and more dotArt, anytime, anywhere. with only keyboard.',
+  title: 'shizen',
+  description: 'sometime, somewhere.',
 }
 
 export default function RootLayout({

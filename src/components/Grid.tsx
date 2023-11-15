@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { GridItemProps } from '@/models/hanabiTypes';
+import { GridItemProps } from '@/models/types';
 import styles from '@/styles/grid.module.css';
 import useKeyboardMovement from "@/hooks/useKeyboardMovement";
 
@@ -12,7 +12,7 @@ const GridItem: React.FC<GridItemProps> = ({ x, y, isCursor }) => (
         data-x={x}
         data-y={y}
     >
-        {isCursor ? '@' : '・'}
+        {isCursor ? '𓃵' : 'ꕤ'}
     </div>
 );
 
