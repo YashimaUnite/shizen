@@ -12,7 +12,7 @@ const GridItem: React.FC<GridItemProps> = ({ x, y, isCursor }) => (
         data-x={x}
         data-y={y}
     >
-        {isCursor ? '✚' : '・'}
+        {isCursor ? '@' : '・'}
     </div>
 );
 
